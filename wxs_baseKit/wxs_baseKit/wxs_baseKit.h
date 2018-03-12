@@ -9,7 +9,7 @@
 #ifndef wxs_baseKit_h
 #define wxs_baseKit_h
 
-#import "wxs_UIKit.h"
+#import "wxs_UIKIT.h"
 #import "wxs_Foundation.h"
 
 

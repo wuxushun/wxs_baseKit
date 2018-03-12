@@ -311,6 +311,12 @@
     }
 #endif
 }
+- (void)wxs_setObjSafty:(id)val forKey:(NSString *)key
+{
+    if (val && key) {
+        self[key] = val;
+    }
+}
 - (void)wxs_setString:(NSString *)val forKey:(NSString *)key;
 {
 #ifdef DEBUG

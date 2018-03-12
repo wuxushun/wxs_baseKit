@@ -63,6 +63,8 @@
 
 - (void)wxs_setObj:(id)val forKey:(NSString *)key;
 
+- (void)wxs_setObjSafty:(id)val forKey:(NSString *)key;
+
 - (void)wxs_setString:(NSString *)val forKey:(NSString *)key;
 
 - (void)wxs_setBool:(BOOL)i forKey:(NSString *)key;

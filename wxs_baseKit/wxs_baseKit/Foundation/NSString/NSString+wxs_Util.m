@@ -80,36 +80,36 @@
     return l + (int)ceilf((float)(a + b) / 2.0);
 }
 
-- (BOOL)isBlankString
++ (BOOL)wxs_isBlankString:(NSString *)string
 {
-    if (self == nil) {
+    if (string == nil) {
         return YES;
     }
-    if (self == NULL) {
+    if (string == NULL) {
         return YES;
     }
-    if ([self isKindOfClass:[NSNull class]]) {
+    if ([string isKindOfClass:[NSNull class]]) {
         return YES;
     }
-    if ([self isEqualToString:@""]) {
+    if ([string isEqualToString:@""]) {
         return YES;
     }
     return NO;
 }
 
-- (BOOL)isNumerals
+- (BOOL)wxs_isNumerals
 {
-    return [self isPureInt] && [self isPureFloat];
+    return [self wxs_isPureInt] && [self wxs_isPureFloat];
 }
 
-- (BOOL)isPureInt
+- (BOOL)wxs_isPureInt
 {
     NSScanner* scan = [NSScanner scannerWithString:self];
     int val;
     return[scan scanInt:&val] && [scan isAtEnd];
 }
 
-- (BOOL)isPureFloat
+- (BOOL)wxs_isPureFloat
 {
     NSScanner* scan = [NSScanner scannerWithString:self];
     float val;

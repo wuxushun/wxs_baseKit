@@ -17,4 +17,8 @@
 
 #import "UIFont+wxs_baseKit.h"
 
+#import "UIViewController+wxs_Util.h"
+
+#import "UIAlertView+wxs_BlockAlertView.h"
+
 #endif /* wxs_UIKIT_h */

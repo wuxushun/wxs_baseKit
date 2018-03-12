@@ -34,21 +34,21 @@
 
  @return YES即为是
  */
-- (BOOL)isBlankString;
++ (BOOL)wxs_isBlankString:(NSString *)string;
 
 /**
  判断是否为数字
 
  @return YES即为是
  */
-- (BOOL)isNumerals;
+- (BOOL)wxs_isNumerals;
 
 /**
  判断是否为整型
 
  @return YES即为是
  */
-- (BOOL)isPureInt;
+- (BOOL)wxs_isPureInt;
 
 
 /**
@@ -56,7 +56,7 @@
 
  @return YES即为是
  */
-- (BOOL)isPureFloat;
+- (BOOL)wxs_isPureFloat;
 
 #pragma mark - 操作
 
